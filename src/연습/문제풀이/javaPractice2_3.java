@@ -29,7 +29,8 @@ public class javaPractice2_3 {
                     }
                     break;
                 case'B': if(curse>0){ //커서 왼쪽에 있는 문자를 삭제
-                    sb.deleteCharAt(curse-1);
+              // sb.deleteCharAt(curse-1);
+                    sb.delete(curse-1,curse);
                    if(curse>sb.length()){
                         curse=sb.length();
                     }
